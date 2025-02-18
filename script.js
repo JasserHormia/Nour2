@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function willUnsubscribe() {
         gsap.to(mouthWorry, { morphSVG: mouthSad, duration: 0.2 });
         title.innerHTML = "You made me sad!";
-        subtitle.innerHTML = "You no longer receive any hugs from me.";
+        subtitle.innerHTML = "Hram 3lik 💔💔.";
         unsubscribeButton.style.display = 'none';
         cancelButton.style.display = 'none';
         goBackButton.style.display = 'block';
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function hasCancelled() {
         gsap.to(mouthWorry, { morphSVG: mouthHappy, duration: 0.2 });
-        title.innerHTML = "Thanks for staying with me!";
+        title.innerHTML = "You made me the happiest person 😍";
         subtitle.innerHTML = "You will continue receiving my love. Yay!";
         unsubscribeButton.style.display = 'none';
         cancelButton.style.display = 'none';
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function goBack() {
-        title.innerHTML = "Do you love me?";
-        subtitle.innerHTML = "If you say no, you will stop receiving calls from me.";
+        title.innerHTML = "Will You Call Me ?";
+        subtitle.innerHTML = "If you say no, consider that you are making a person SAD 😭.";
         unsubscribeButton.style.display = 'block';
         cancelButton.style.display = 'block';
         goBackButton.style.display = 'none';
@@ -313,8 +313,8 @@ var animate = (function() {
 		confettis.forEach(function(el) {
 			TweenMax.set(el, {x:0, y: 0, rotation:0});
 		});
-		title.innerHTML = "Do you love me?";
-		subtitle.innerHTML = "If you say no, you will stop receiving calls from me.";
+		title.innerHTML = "Will You Call Me ?";
+		subtitle.innerHTML = "If you say no, consider that you are making a person SAD 😭 .";
 		unsubscribeButton.style.display = 'block';
 		cancelButton.style.display = 'block';
 		goBackButton.style.display = 'none';
